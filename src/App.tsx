@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { FunctionComponent, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-const App = () => {
+const App: FunctionComponent = () => {
   const [count, setCount] = useState(0);
 
   return (
