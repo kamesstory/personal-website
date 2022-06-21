@@ -1,6 +1,5 @@
 import React, { FC, useState } from "react";
 import headshot from "./assets/headshot.jpg";
-import "./App.css";
 import tw, { styled } from "twin.macro";
 
 type Props = {
@@ -12,7 +11,7 @@ const Greeting = tw.div`border hover:border-black`;
 const Paragraph = tw.div`border hover:border-black`;
 
 const Link: FC<Props & { link: string }> = ({ children, link }) => (
-  <span tw="cursor-pointer" onClick={() => window.open(link)}>
+  <span css={[tw`cursor-pointer`]} onClick={() => window.open(link)}>
     {children}
   </span>
 );
