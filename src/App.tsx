@@ -10,7 +10,7 @@ const Greeting = tw.div`text-6xl mb-5`;
 
 const Paragraph = tw.div`max-w-[500px] text-base mb-3`;
 
-const Headshot = tw.img`max-h-[600px]`;
+const Headshot = tw.img`max-h-[600px] hover:scale-1005`;
 
 const AppContainer = tw.div`h-full w-full flex flex-row items-center justify-center`;
 
