@@ -6,15 +6,15 @@ type Props = {
   children?: React.ReactNode;
 };
 
-const Greeting = tw.div`border hover:border-black`;
+const Greeting = tw.div`text-6xl mb-5`;
 
-const Paragraph = tw.div`max-w-[500px]`;
+const Paragraph = tw.div`max-w-[500px] text-base mb-3`;
 
-const Headshot = tw.img`max-h-[700px]`;
+const Headshot = tw.img`max-h-[600px]`;
 
 const AppContainer = tw.div`h-full w-full flex flex-row items-center justify-center`;
 
-const ContentContainer = tw.div`flex flex-col items-start`;
+const ContentContainer = tw.div`flex flex-col items-start ml-10`;
 
 const Link: FC<Props & { link: string }> = ({ children, link }) => (
   <span css={[tw`cursor-pointer`]} onClick={() => window.open(link)}>
@@ -29,7 +29,7 @@ const App: FC = () => {
     <AppContainer>
       <Headshot src={headshot} />
       <ContentContainer>
-        <Greeting>Hi, I'm Jason</Greeting>
+        <Greeting className="mb-5">Hi, I'm Jason</Greeting>
         <Paragraph>
           I'm currently a software engineer at{" "}
           <Link link="https://getcensus.com">Census</Link>, helping teams use
