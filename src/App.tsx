@@ -29,7 +29,7 @@ const App: FC = () => {
     <AppContainer>
       <Headshot src={headshot} />
       <ContentContainer>
-        <Greeting className="mb-5">Hi, I'm Jason</Greeting>
+        <Greeting>Hi, I'm Jason</Greeting>
         <Paragraph>
           I'm currently a software engineer at{" "}
           <Link link="https://getcensus.com">Census</Link>, helping teams use
